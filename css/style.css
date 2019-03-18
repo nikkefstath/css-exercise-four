@@ -7,7 +7,7 @@ body {
   font-size: 10px;
 }
 .container {
-  width: 100%;
+  width: 200px;
   margin: auto;
 }
 
@@ -15,12 +15,9 @@ body {
 display: inline-block;
 font-size: 24px;
 height: 200px;
-width: 300px;
-padding: 25px;
-margin: 5px;
-background-size: contain;
+width: 100%;
+background-size: cover;
 background-position: left;
-background-repeat: no-repeat;
 }
 
 .baku {
@@ -39,9 +36,15 @@ background-repeat: no-repeat;
   background-image: url(../images/rome.jpg);
 }
 
-  @media screen and (min-width: 991px) {
-  .container{
-         margin: 1%;
-         width: 22%;
-      }
-    }
+@media screen and (min-width: 575px) {
+  .preview {
+    margin: 1%;
+    width: 48%;
+  }
+}
+@media screen and (min-width: 991px) {
+  .preview {
+    margin: 1%;
+    width: 22%;
+  }
+}
